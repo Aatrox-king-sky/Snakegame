@@ -1,0 +1,81 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.score-panel {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px; /* 新增：按钮间加间距 */
+}
+
+#startBtn, #restartBtn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#startBtn {
+    background-color: #2196F3; /* 蓝色开始按钮 */
+    color: white;
+}
+
+    #startBtn:hover {
+        background-color: #0b7dda;
+    }
+
+#restartBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+    #restartBtn:hover {
+        background-color: #45a049;
+    }
+
+    /* 禁用状态样式 */
+    #restartBtn:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+        color: #666;
+    }
+
+#gameCanvas {
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+}
+
+.tips {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}

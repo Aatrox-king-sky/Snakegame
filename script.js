@@ -1,4 +1,4 @@
-// script.js - 贪吃蛇贴图版 (蛇身/苹果采用精致手绘贴图风格)
+// script.js - 贪吃蛇贴图版 (蛇身/苹果采用精致手绘贴图风格
 (function () {
     // ---------- DOM 元素 ----------
     const canvas = document.getElementById('gameCanvas');
